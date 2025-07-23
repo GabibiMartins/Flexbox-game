@@ -4,8 +4,65 @@
          <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Flexbox games</title>
+        <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1, h2, h4 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        #cajui {
+            max-width: 500px;
+            height: auto;
+        }
+        </style>
     </head>
-    <body>
+    <body
         <p> Gabriela Martins Matos Gomes</p>
         <h1>Jogos escolhidos</h1>
         <ul>
@@ -14,9 +71,31 @@
         </ul>
         <p> Escolhi esses jogos pois achei a interface do jogo dos zombies bonita e a dos sapinhos fofa</p>
         <h2>Registro de níveis</h2>
+        <h4>Zombie flexbox</h4>
         <img src="/img/zombie.png">
-        <p>Tive dificuldade porque não estava conseguingo alinhar a "mira" </p>
+        <p>Tive dificuldade porque não estava conseguingo alinhar a "mira" no primeiro zombie. </p>
         <img src="/img/zombie2.png">
+        <p>Tive dificuldade porque fiquei confundindo os comandos space-between e space-around.</p>
         <img src="/img/zombie3.png">
+        <p>Tive dificuldade porque não estava lembrando como o justify-content alinhava a "mira" na esquerda.</p>
+        <h4>Froggy flexbox</h4>
+        <img src="/img/sapinho.png">
+        <p>Tive dificuldade porque demorei pra entender que iria precisar usar o reverse.</p>
+        <img src="/img/sapinho2.png">
+        <p>Nesse jogo não precisava usar o flex-start, só precisava do start, por isso enquanto eu não tirei o start não funcionou.</p>
+        <img src="/img/sapinho3.png" >
+        <p>Tive dificuldade em diferenciar o space-between e o space-around.</p>
+        <h2>Aplicação prática</h2>
+        <p>Propiedades utilizadas na atividade:</p>
+        <ul>
+            <li>Display: flex - Define que um elemento pai (container), ativa o comportamento do Flexbox e os filhos (itens) podem ser organizados de forma flexível. </li>
+            <li>Flex-direction - Define a direção do eixo principal, ou seja, como os itens serão colocados (em linha ou em coluna) </li>
+            <li>justify-content - Controla o alinhamento dos itens no eixo principal (horizontal se for row, vertical se for column). </li>
+            <li>Align-items - Controla o alinhamento dos itens no eixo cruzado (perpendicular ao principal). </li>
+        </ul>
+        <p> Exemplo de flexbox: </p>
+        <img id="cajui" src="/img/cajui.jpg">
+        <p> Para o acesso ao cajuí foi preciso dividir o container em 3, sendo 2 flexbox. O primeiro contém duas imagens lado a lado; 
+            o segundo da acesso as abas de alterar senha e recuperar senha </p>
     </body>
 </html>
